@@ -1,0 +1,11 @@
+Options -Indexes
+RewriteBase /
+RewriteEngine on
+
+# ERRORS TODO
+# MINIFIERS TODO
+
+# API
+RewriteRule ^(.+)?$ index.php [NC,L,QSA]
+
+ErrorDocument 504 /malone.php?controller=errors&view=track
